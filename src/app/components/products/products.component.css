@@ -1,0 +1,84 @@
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 650px;
+  padding-top: 50px;
+  margin-left: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.list-container .list-item {
+  width: 30%;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid rgb(155, 155, 155);
+  cursor: pointer;
+}
+
+.list-container .list-item:hover .list-item-more-btn {
+  background-color: rgb(136, 173, 161);
+}
+
+.list-container .list-item-thumb img {
+  width: 100%;
+  font-size: 12px;
+}
+.list-container .list-item-info {
+  position: relative;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.list-container .list-item-info::before {
+  content: '';
+  background-color: #75635f;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.list-container .list-item-title {
+  position: relative;
+  margin: 5px;
+  padding: 0 20px;
+}
+
+.list-container .list-item-desc {
+  color: #7e7e7e;
+  font-size: 13px;
+  position: relative;
+  line-height: 5px;
+  padding-top: 5px;
+}
+
+.list-container .list-item-price {
+  height: 40px;
+  font-size: 20px;
+}
+
+.list-container .list-item-price .val b {
+
+  margin-left: 5px;
+}
+
+.list-container .list-item-price {
+  color: #9c9b9b;
+}
+
+.list-container .list-item-more-btn {
+  background-color: #525252;
+  color: #fff;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}

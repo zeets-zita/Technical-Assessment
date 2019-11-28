@@ -1,0 +1,50 @@
+.item-img {
+  margin-left: 90px;
+}
+.container-fluid {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.item-name {
+  width: 60%;
+}
+
+.back-btn {
+ cursor: pointer;
+ margin-bottom: 20px;
+ padding: 4px 8px;
+ font-size: 26px;
+ width: 40px;
+ border: 0.2px solid rgb(163, 163, 163);
+ border-spacing: 10px;
+}
+
+.item-text {
+ margin: 40px 90px;
+}
+
+.item-descrip-header {
+  font-size: 18px;
+
+}
+.item-descrip {
+  margin-top: 25px;
+}
+
+.item-name {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.item-price {
+  background-color: #525252;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
+  width: 25%;
+  margin-top: 102px;
+}
+.item-info {
+  margin-top: 20px;
+}

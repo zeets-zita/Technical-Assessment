@@ -1,0 +1,23 @@
+<div class="list-container">
+  <div *ngFor="let car of cars$ | async"
+    [class.selected]="car.vehicle === selectedCar"
+    class="list-item">
+    <img class="list-item-thumb" src="{{car.imageUrl}}" width="280" style="font-size: small;" alt="{{car.vehicle}}">
+      <div class="list-item-info">
+        <p class="list-item-title">{{car.vehicle}}</p>
+        <div class="list-item-desc">
+            <p>Colour: {{car.color}}</p>
+            <p>Year: {{car.year}}</p>
+            <p>Mileage: {{car.mileage}}</p>
+        </div>
+      </div>
+      <div class="list-item-price">
+        <div class="val">
+          <small>{{car.sellingPrice}}</small>
+        </div>
+      </div>
+      <div class="list-item-more-btn" [routerLink]="['/', car.vehicle]">
+        More Details
+      </div>
+  </div>
+</div>

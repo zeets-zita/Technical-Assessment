@@ -1,0 +1,32 @@
+.header {
+  background: #eaebef;
+  color: #424347;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+
+nav h2 {
+  padding: 10px;
+  letter-spacing: 4px;
+}
+
+.links {
+  padding: 12px;
+  text-align: center;
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 19px;
+}
+
+.header a {
+  color: #424347;
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div *ngIf="car$ | async as car">
+    <div routerLink="/" class="back-btn"> &#8617;</div>
+      <div class="row">
+        <div class="col">
+          <img class="item-img" src="{{car.imageUrl}}" width="500" alt="{{car.vehicle}}">
+          <div class="item-text">
+            <h5 class="item-descrip-header" style="text-transform: uppercase; text-align: center;">Description</h5>
+          <p class="item-descrip">{{car.description}}</p>
+        </div>
+        </div>
+        <div class="col">
+          <h4 class="item-name">{{car.vehicle}}</h4>
+          <div class="item-info">
+          <p>Colour: {{car.color}}</p>
+          <p>Year: {{car.year}}</p>
+          <p>Mileage: {{car.mileage}}</p>
+        </div>
+          <p class="item-price">{{car.sellingPrice}}</p>
+        </div>
+      </div>
+    </div>
+</div>
